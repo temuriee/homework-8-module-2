@@ -15,17 +15,17 @@ const Navbar = () => {
       to: "/Impact",
     },
     {
-      link: "Locations",
+      link: "Loca tions",
       to: "/Locations",
     },
   ];
 
   return (
-    <div>
-      <nav className="flex flex-row">
+    <div className=" flex items-center">
+      <nav className="flex gap-10 flex-row">
         {test.map((eachElement) => (
           <Link
-            className="max-w-[1000px] flex flex-row justify-center items-center font-[500] color-[#74768F]"
+            className="  justify-center items-center font-medium text-[#74768F]"
             to={eachElement.to}
           >
             {eachElement.link}
