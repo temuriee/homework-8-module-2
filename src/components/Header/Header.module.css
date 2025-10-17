@@ -1,4 +1,8 @@
-button:hover {
+.mainBtn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+.secondBtn:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.5s;
 }

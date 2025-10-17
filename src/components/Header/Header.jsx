@@ -14,10 +14,14 @@ const Header = () => {
 
       <Navbar />
       <div className="flex justify-center items-center gap-x-[16px]">
-        <button className="pl-[24px] pr-[24px] pt-[16px] pb-[16px] bg-[#0A157A] border rounded-[8px] text-[#FBFBFB] hover:cursor-pointer ">
+        <button
+          className={`pl-[24px] pr-[24px] pt-[16px] pb-[16px] bg-[#0A157A] border rounded-[8px] text-[#FBFBFB] hover:cursor-pointer ${Styles.mainBtn}`}
+        >
           Sign In
         </button>
-        <button className="pl-[24px] pr-[24px] pt-[16px] pb-[16px] border-2 border-[#0A157A] rounded-[8px] text-[#0A157A]  hover:cursor-pointer">
+        <button
+          className={`pl-[24px] pr-[24px] pt-[16px] pb-[16px] border-2 border-[#0A157A] rounded-[8px] text-[#0A157A]  hover:cursor-pointer ${Styles.secondBtn}  `}
+        >
           Sign Up
         </button>
       </div>
