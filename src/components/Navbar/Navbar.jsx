@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const test = [
+  const links = [
     {
-      link: "Home",
-      to: "/",
+      link: "About Us",
+      to: "/About",
     },
     {
       link: "Projects",
@@ -15,17 +16,17 @@ const Navbar = () => {
       to: "/Impact",
     },
     {
-      link: "Loca tions",
+      link: "Locations",
       to: "/Locations",
     },
   ];
 
   return (
     <div className=" flex items-center">
-      <nav className="flex gap-10 flex-row">
-        {test.map((eachElement) => (
+      <nav className="flex gap-x-[40px] flex-row">
+        {links.map((eachElement) => (
           <Link
-            className="  justify-center items-center font-medium text-[#74768F]"
+            className={`font-medium text-[#74768F] ${Styles.text}`}
             to={eachElement.to}
           >
             {eachElement.link}

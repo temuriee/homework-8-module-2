@@ -1,0 +1,11 @@
+.text {
+  font-family: "Inter", Arial, Helvetica;
+}
+
+.text:hover {
+  transition: ease-in-out 0.5s;
+  transform: scale(1.1);
+  color: #36454f;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
